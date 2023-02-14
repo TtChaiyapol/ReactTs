@@ -6,6 +6,10 @@ import * as path from "path";
 export default defineConfig({
   server: { port: 3000 },
   plugins: [react()],
+  base: " ReactTs",
+  build: {
+    outDir: "docs",
+  },
   resolve: {
     alias: [{ find: "@", replacement: path.resolve(__dirname, "src") }],
   },
